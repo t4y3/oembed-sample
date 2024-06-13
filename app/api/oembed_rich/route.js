@@ -1,10 +1,8 @@
-import {NextResponse} from 'next/server'
-
 // < \u003C
 // > \u003E
 
 export async function GET(request) {
-    return NextResponse.json({
+    return new Response({
             "author_name": "t4y3",
             "html": "\u003Cdiv\u003Eくまさん\u003C/div\u003E",
             "width": 300,

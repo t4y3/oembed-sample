@@ -1,10 +1,8 @@
-import {NextResponse} from 'next/server'
-
 // < \u003C
 // > \u003E
 
 export async function GET(request) {
-    return NextResponse.json({
+    return new Response({
         "version": "1.0",
         "type": "photo",
         "width": 240,
