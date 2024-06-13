@@ -2,11 +2,11 @@ export async function generateMetadata(
     {params, searchParams},
     parent
 ) {
-    const url = encodeURIComponent(`https://oembed-sample.vercel.app/news/${params.newsId}&format=json`)
+    const url = encodeURIComponent(`https://oembed-sample.vercel.app/news/${params.newsId}`)
     return {
         alternates: {
             types: {
-                "application/json+oembed": `https://oembed-sample.vercel.app/api/oembed?url=${url}`,
+                "application/json+oembed": `https://oembed-sample.vercel.app/api/oembed?url=${url}&format=json`,
                 title: "Embed Test"
             }
         }
