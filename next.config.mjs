@@ -13,12 +13,19 @@ const nextConfig = {
                         key: "Access-Control-Allow-Methods",
                         value: "GET",
                     },
-                    {
-                        key: "Access-Control-Allow-Headers",
-                        value: "Referer",
-                    },
                 ],
             },
+            {
+                source: "/:path*",
+                headers: [
+                    {
+                        key: 'Referrer-Policy',
+                        value: 'unsafe-url'
+                    }
+
+                ],
+            },
+
         ];
     },
 };
