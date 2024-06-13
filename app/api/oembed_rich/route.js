@@ -4,7 +4,7 @@ import {NextResponse} from 'next/server'
 // > \u003E
 
 export async function GET(request) {
-    return await NextResponse.json({
+    return NextResponse.json({
             "author_name": "t4y3",
             "html": "\u003Cdiv\u003Eくまさん\u003C/div\u003E",
             "width": 300,
@@ -18,6 +18,13 @@ export async function GET(request) {
             "thumbnail_width": 300,
             "thumbnail_height": 300
 
+        }, {
+            status: 200,
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'GET',
+                'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+            },
         }
     )
 }
