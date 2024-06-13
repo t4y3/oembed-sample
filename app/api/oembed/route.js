@@ -1,5 +1,8 @@
 import {NextResponse} from 'next/server'
 
+// < \u003C
+// > \u003E
+
 export async function GET(request) {
 
     return NextResponse.json({
@@ -7,7 +10,7 @@ export async function GET(request) {
             "version": "1.0",
             "title": "埋め込みどうでしょう",
             "author_name": "t4y3",
-            "html": "<div style=\"width:100%;height:120px;border:1px solid;font-weight:bold;overflow:hidden;background-color:white;\"><img alt=\"\" src=\"http://farm4.static.flickr.com/3123/2341623661_7c99f48bbf_m.jpg\" width=120 height=120 style=\"float:left;margin-right:10px;\"/>くまさん</div>",
+            "html": "\u003Cdiv style=\"width:100%;height:120px;border:1px solid;font-weight:bold;overflow:hidden;background-color:white;\"\u003E\u003Cimg alt=\"\" src=\"http://farm4.static.flickr.com/3123/2341623661_7c99f48bbf_m.jpg\" width=120 height=120 style=\"float:left;margin-right:10px;\"/\u003Eくまさん\u003C/div\u003E",
             "height": 500,
             "width": 500,
         }
