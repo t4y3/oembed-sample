@@ -7,7 +7,7 @@ export async function GET(request) {
 
     return NextResponse.json({
             "author_name": "t4y3",
-            "html": "\u003Cdiv style=\"width:300px;height:300px;border:1px solid;font-weight:bold;overflow:hidden;background-color:white;\"\u003E\u003Cimg alt=\"\" src=\"http://farm4.static.flickr.com/3123/2341623661_7c99f48bbf_m.jpg\" width=120 height=120 style=\"float:left;margin-right:10px;\"/\u003Eくまさん\u003C/div\u003E",
+            "html": "\u003Cdiv\u003Eくまさん\u003C/div\u003E",
             "width": 300,
             "height": 300,
             "version": "1.0",
