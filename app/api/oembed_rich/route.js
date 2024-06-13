@@ -7,12 +7,12 @@ export async function GET(request) {
     return NextResponse.json({
         "version": "1.0",
         "author_name": "t4y3",
-        "html": "\u003Cp\u003Etest\u003C/p\u003E",
+        "html": "\u003Ciframe referrerpolicy=\"unsace-url\" src=\"https://oembed-sample.vercel.app\" frameborder=\"0\" width=\"300\" height=\"300\" allowfullscreen\u003E\u003C/iframe\u003E",
         "width": 300,
         "height": 300,
         "provider_name": "oEmbed Sample",
         "provider_url": "https://oembed-sample.vercel.app/",
         "type": "rich",
-        "title": "embed test"
+        "title": "ku"
     }, { status: 200 });
 }
