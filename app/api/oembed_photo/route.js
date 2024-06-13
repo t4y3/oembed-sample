@@ -1,8 +1,9 @@
+import { NextResponse} from "next/server";
 // < \u003C
 // > \u003E
 
 export async function GET(request) {
-    return new Response({
+    return NextResponse.json({
         "version": "1.0",
         "type": "photo",
         "width": 240,
@@ -14,11 +15,6 @@ export async function GET(request) {
         "provider_name": "Flickr",
         "provider_url": "http://www.flickr.com/"
     }, {
-        status: 200,
-        headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'GET',
-            'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-        },
+        status: 200
     })
 }

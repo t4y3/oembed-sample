@@ -6,7 +6,7 @@ import { NextResponse} from "next/server";
 export async function GET(request) {
     return NextResponse.json({
         "author_name": "t4y3",
-        "html": "\u003Cdiv\u003EKUMA_SAN\u003C/div\u003E",
+        "html": "\u003Ciframe src=\"https://oembed-sample.vercel.app\" frameborder=\"0\" width=\"300\" height=\"300\" allowfullscreen\u003E\u003C/iframe\u003E",
         "width": 300,
         "height": 300,
         "version": "1.0",
