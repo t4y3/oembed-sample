@@ -7,7 +7,7 @@ export async function GET(request) {
     return NextResponse.json({
         "version": "1.0",
         "author_name": "t4y3",
-        "html": "\u003Cdiv\u003Etest\u003C/div\u003E",
+        "html": "\u003Cblockquote\u003Etest\u003C/blockquote\u003E",
         "width": 300,
         "height": 300,
         "provider_name": "oEmbed Sample",
