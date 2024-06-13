@@ -5,7 +5,7 @@ export async function generateMetadata(
     return {
         alternates: {
             types: {
-                "'application/json+oembed'": `https://oembed-sample.vercel.app/api/oembed?newsId=${params.newsId}`
+                "'application/json+oembed'": `https://oembed-sample.vercel.app/api/oembed?url=https://oembed-sample.vercel.app/news/${params.newsId}`
             }
         }
     }
