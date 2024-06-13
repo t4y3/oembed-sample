@@ -7,7 +7,7 @@ export async function GET(request) {
     return NextResponse.json({
         "version": "1.0",
         "author_name": "t4y3",
-        "html": "\u003Ciframe referrerpolicy=\"unsace-url\" src=\"https://oembed-sample.vercel.app\" frameborder=\"0\" width=\"300\" height=\"300\" allowfullscreen\u003E\u003C/iframe\u003E",
+        "html": "\u003Ciframe referrerpolicy=\"unsace-url\" src=\"https://oembed-sample.vercel.app/rich/123/embed\" frameborder=\"0\" width=\"300\" height=\"300\" allowfullscreen\u003E\u003C/iframe\u003E",
         "width": 300,
         "height": 300,
         "provider_name": "oEmbed Sample",
