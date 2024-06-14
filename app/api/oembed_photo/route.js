@@ -8,12 +8,12 @@ export async function GET(request) {
         "type": "photo",
         "width": 240,
         "height": 160,
-        "title": "ZB8T0193",
+        "title": "oEmbed Photo Sample",
         "url": "http://farm4.static.flickr.com/3123/2341623661_7c99f48bbf_m.jpg",
-        "author_name": "Bees",
-        "author_url": "http://www.flickr.com/photos/bees/",
-        "provider_name": "Flickr",
-        "provider_url": "http://www.flickr.com/"
+        "author_name": "Yuki",
+        "author_url": "https://oembed-sample.vercel.app/",
+        "provider_name": "oEmbed Sample",
+        "provider_url": "https://oembed-sample.vercel.app/"
     }, {
         status: 200
     })
