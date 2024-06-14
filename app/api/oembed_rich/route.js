@@ -11,7 +11,7 @@ export async function GET(request) {
         "width": 300,
         "height": 300,
         "provider_name": "oEmbed Sample",
-        "provider_url": "https://oembed-sample.vercel.app/",
+        "provider_url": "https://oembed-sample.vercel.app",
         "type": "rich",
         "title": "ku"
     }, { status: 200 });
