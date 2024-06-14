@@ -20,8 +20,12 @@ const nextConfig = {
                 source: "/:path*",
                 headers: [
                     {
-                        key: 'Referrer-Policy',
-                        value: 'unsafe-url'
+                        key: "X-Frame-Options",
+                        value: "SAMEORIGIN",
+                    },
+                    {
+                        key: "X-Content-Type-Options",
+                        value: "nosniff",
                     }
 
                 ],
