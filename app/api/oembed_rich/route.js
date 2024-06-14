@@ -5,7 +5,7 @@ import {NextResponse} from "next/server";
 
 export async function GET(request) {
     const response = NextResponse.json({
-        "html": "\u003Ciframe allowfullscreen allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" src=\"https://oembed-sample.vercel.app/rich/123/embed\" frameborder=\"0\" width=\"300\" height=\"300\"\u003E\u003C/iframe\u003E",
+        "html": "\u003Ciframe style=\"border-radius: 12px\" width=\"100%\" height=\"300\" title=\"Spotify Embed: Today’s Top Hits\" frameborder=\"0\" allowfullscreen allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\" src=\"https://oembed-sample.vercel.app/rich/123/embed\"\u003E\u003C/iframe\u003E",
         "iframe_url": "https://oembed-sample.vercel.app/rich/123/embed",
         "width": 300,
         "height": 300,
