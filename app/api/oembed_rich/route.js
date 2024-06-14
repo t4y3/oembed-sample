@@ -14,7 +14,7 @@ export async function GET(request) {
         "provider_url": "https://oembed-sample.vercel.app",
         "type": "rich",
         "title": "ku",
-        "thumbnail_url": "http://farm4.static.flickr.com/3123/2341623661_7c99f48bbf_m.jpg",
+        "thumbnail_url": "https://picsum.photos/300/300",
         "thumbnail_width": 300,
         "thumbnail_height": 300
     }, {status: 200});
