@@ -6,7 +6,6 @@ import {NextResponse} from "next/server";
 
 const baseObject = {
     "version": "1.0",
-    "type": "photo",
     "author_name": "Yuki",
     "author_url": "https://oembed-sample.vercel.app",
     "provider_name": "oEmbed Sample",
@@ -31,10 +30,12 @@ export async function GET(request) {
         "width": width,
         "height": height,
         ...(type === 'photo' && {
+            "type": "photo",
             url: thumbnailImage,
             "title": `oEmbed Photo Sample #${id}`,
         }),
         ...(type === 'rich' && {
+            "type": "rich",
             "title": `oEmbed Rich Sample #${id}`,
             "html": `\u003Ciframe style="border-radius: 12px" width="300" height="300" title="Spotify Embed: Today’s Top Hits" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" src="${iframeUrl}"\u003E\u003C/iframe\u003E`,
             "iframe_url": iframeUrl,
