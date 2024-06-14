@@ -17,13 +17,15 @@ export async function GET(request) {
     const width = 300;
     const height = 300;
 
-    const url = new URL(request.url);
-    const _url = url.searchParams.get('url');
+    const requestUrl = new URL(request.url);
+    const url = requestUrl.searchParams.get('url');
 
-    const id = _url.split('/')[_url.split('/').length - 1];
-    const type = _url.indexOf('photo') !== -1 ? 'photo' : 'rich';
+    const referrer = searchParams.get('referrer');
+
+    const id = url.split('/')[url.split('/').length - 1];
+    const type = url.indexOf('photo') !== -1 ? 'photo' : 'rich';
     const thumbnailImage = `https://picsum.photos/id/${id}/200/300`;
-    const iframeUrl = `https://oembed-sample.vercel.app/rich/${id}/embed`
+    const iframeUrl = `https://oembed-sample.vercel.app/rich/${id}/embed?referrer=${encodeURIComponent(referrer)}`
 
     const json = {
         ...baseObject,
