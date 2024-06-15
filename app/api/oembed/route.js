@@ -24,8 +24,8 @@ export async function GET(request) {
 
     const id = url.split('/')[url.split('/').length - 1];
     const type = url.indexOf('photo') !== -1 ? 'photo' : 'rich';
-    const thumbnailImage = `https://picsum.photos/id/${id}/200/300`;
-    const iframeUrl = `https://oembed-sample.pages.dev/rich/${id}/embed?referrer=${encodeURIComponent(referrer)}`
+    const thumbnailImage = `https://picsum.photos/id/${id}/${width}/${height}`;
+    const iframeUrl = `https://oembed-sample.pages.dev/e/rich/${id}/embed?referrer=${encodeURIComponent(referrer)}`
 
     const json = {
         ...baseObject,
