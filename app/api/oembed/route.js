@@ -38,7 +38,7 @@ export async function GET(request) {
             "type": "rich",
             "title": `oEmbed Rich Sample #${id}`,
             "html": `\u003Ciframe style="border-radius: 12px" width="${width}" height="${height}" title="oEmbed Rich Sample #${id}" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" sandbox="allow-scripts" src="${iframeUrl}"\u003E\u003C/iframe\u003E`,
-            "iframe_url": iframeUrl,
+            "url": `https://oembed-sample.vercel.app/e/rich/${id}`,
             "thumbnail_url": thumbnailImage,
             "thumbnail_width": width,
             "thumbnail_height": height
