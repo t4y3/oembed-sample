@@ -6,6 +6,10 @@ const nextConfig = {
             {
                 "source": "/api/oembed",
                 "destination": "/api/oembed"
+            },
+            {
+                "source": "/e/rich/:match*",
+                "destination": "/e/rich/:match*"
             }
         ]
     },
