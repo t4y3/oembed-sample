@@ -37,7 +37,7 @@ export async function GET(request) {
         ...(type === 'rich' && {
             "type": "rich",
             "title": `oEmbed Rich Sample #${id}`,
-            "html": `\u003Ciframe style="border-radius: 12px" width="300" height="300" title="oEmbed Rich Sample #${id}" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" sandbox="allow-scripts" src="${iframeUrl}"\u003E\u003C/iframe\u003E`,
+            "html": `\u003Ciframe style="border-radius: 12px" width="300" height="300" title="oEmbed Rich Sample #${id}" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" sandbox="allow-scripts" src="${iframeUrl}"\u003E\u003C/iframe\u003E`,
             "iframe_url": iframeUrl,
             "thumbnail_url": thumbnailImage,
             "thumbnail_width": width,
