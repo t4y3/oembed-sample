@@ -20,12 +20,10 @@ export async function GET(request) {
     const requestUrl = new URL(request.url);
     const url = requestUrl.searchParams.get('url');
 
-    const referrer = new URL(url).searchParams.get('referrer');
-
     const id = url.split('/')[url.split('/').length - 1];
     const type = url.indexOf('photo') !== -1 ? 'photo' : 'rich';
     const thumbnailImage = `https://picsum.photos/id/${id}/${width}/${height}`;
-    const iframeUrl = `https://oembed-sample.pages.dev/e/rich/${id}/embed?referrer=${encodeURIComponent(referrer)}`
+    const iframeUrl = `https://oembed-sample.pages.dev/e/rich/${id}/embed`
 
     const json = {
         ...baseObject,
