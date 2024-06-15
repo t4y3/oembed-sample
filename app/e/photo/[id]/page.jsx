@@ -4,11 +4,11 @@ export async function generateMetadata(
     {params, searchParams},
     parent
 ) {
-    const url = encodeURIComponent(`https://oembed-sample.pages.dev/e/photo/${params.id}`)
+    const url = encodeURIComponent(`https://oembed-sample.vercel.app/e/photo/${params.id}`)
     return {
         alternates: {
             types: {
-                "application/json+oembed": `https://oembed-sample.pages.dev/api/oembed?url=${url}&format=json`
+                "application/json+oembed": `https://oembed-sample.vercel.app/api/oembed?url=${url}&format=json`
             }
         }
     }
