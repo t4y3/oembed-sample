@@ -4,7 +4,7 @@ export async function generateMetadata(
     {params, searchParams},
     parent
 ) {
-    const url = encodeURIComponent(`https://oembed-sample.pages.dev/__rich/${params.id}`)
+    const url = encodeURIComponent(`https://oembed-sample.pages.dev/e/rich/${params.id}`)
     return {
         alternates: {
             types: {
@@ -18,7 +18,7 @@ export default function Page() {
     return (
         <main>
             <h1>Richのembedを確認</h1>
-            <a href="https://oembed-sample.pages.dev/__rich/14543543" className="embedly-card">Embedly</a>
+            <a href="https://oembed-sample.pages.dev/e/rich/14543543" className="embedly-card">Embedly</a>
         </main>
     );
 }

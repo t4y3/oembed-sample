@@ -4,7 +4,7 @@ export async function generateMetadata(
     {params, searchParams},
     parent
 ) {
-    const url = encodeURIComponent(`https://oembed-sample.pages.dev/__photo/${params.id}`)
+    const url = encodeURIComponent(`https://oembed-sample.pages.dev/e/photo/${params.id}`)
     return {
         alternates: {
             types: {
