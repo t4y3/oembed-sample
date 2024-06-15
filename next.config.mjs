@@ -37,7 +37,7 @@ const nextConfig = {
                 headers: [
                     {
                         key: "Link",
-                        value: `<https://oembed-sample.vercel.app/api/oembed?url=https%3A%2F%2Foembed-sample.vercel.app%2Fe%2Frich%2F:path*&format=json>; rel=\"alternate\"; type=\"application/json+oembed\"; title=\"oEmbed Sample\"`,
+                        value: `<https://oembed-sample.vercel.app/api/oembed?url=https%3A%2F%2Foembed-sample.vercel.app%2Fe%2Frich%2F:path*&amp;format=json>; rel=\"alternate\"; type=\"application/json+oembed\"; title=\"oEmbed Sample\"`,
                     },
                 ],
             },
