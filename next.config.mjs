@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: "standalone",
+    async rewrites() {
+        return [
+            {
+                "source": "/api/oembed",
+                "destination": "/api/oembed"
+            }
+        ]
+    },
     async headers() {
         return [
             {
