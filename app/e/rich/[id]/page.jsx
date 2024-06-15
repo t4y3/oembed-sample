@@ -18,7 +18,6 @@ export default function Page() {
     return (
         <main>
             <h1>Richのembedを確認</h1>
-            <a href="https://oembed-sample.pages.dev/e/rich/14543543" className="embedly-card">Embedly</a>
         </main>
     );
 }
