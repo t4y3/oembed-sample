@@ -20,7 +20,7 @@ export async function GET(request) {
     const requestUrl = new URL(request.url);
     const url = requestUrl.searchParams.get('url');
 
-    const referrer = searchParams.get('referrer');
+    const referrer = new URL(url).searchParams.get('referrer');
 
     const id = url.split('/')[url.split('/').length - 1];
     const type = url.indexOf('photo') !== -1 ? 'photo' : 'rich';
