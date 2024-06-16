@@ -59,7 +59,7 @@ const nextConfig = {
                     },
                     {
                         key: "Content-Security-Policy",
-                        value: "default-src 'self'; frame-ancestors 'self' https://oembed-sample.vercel.app"
+                        value: "default-src 'self'; frame-ancestors 'self' https://*;"
                     }
                 ],
             },
