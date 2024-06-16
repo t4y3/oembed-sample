@@ -1,11 +1,12 @@
 export const runtime = 'edge';
+import { Embed } from './Embed';
 
 export default function Page({params}) {
     return (
         <main>
             <h1>ブログ記事ページ</h1>
             <hr/>
-            <a href={`https://oembed-sample.vercel.app/e/rich/${params.blogId}`} className="embedly-card">Embedly</a>
+            <Embed blogId={params.blogId}/>
             <hr/>
             <iframe style={{borderRadius: "12px"}} width={300} height={300} title="oEmbed Rich Sample #${id}"
                     frameBorder="0" allowFullScreen
