@@ -20,7 +20,7 @@ const nextConfig = {
     img-src 'self' 'unsafe-eval' 'unsafe-inline' http://* https://*;
     connect-src 'self' http://* https://*;
     frame-src 'self' http://* https://*;
-    frame-ancestors 'self' http://* https://*;
+    frame-ancestors 'self' http://* https://* localhost:*;
 `
         // Replace newline characters and spaces
         const contentSecurityPolicyHeaderValue = cspHeader
