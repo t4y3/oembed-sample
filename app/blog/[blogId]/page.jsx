@@ -5,7 +5,7 @@ export default function Page({params}) {
         <main>
             <h1>ブログ記事ページ</h1>
             <hr/>
-            {/*<a href={`https://oembed-sample.vercel.app/e/rich/${params.blogId}`} className="embedly-card">Embedly</a>*/}
+            <a href={`https://oembed-sample.vercel.app/e/rich/${params.blogId}`} className="embedly-card">Embedly</a>
             <hr/>
             <iframe style={{borderRadius: "12px"}} width={300} height={300} title="oEmbed Rich Sample #${id}"
                     frameBorder="0" allowFullScreen
