@@ -16,9 +16,9 @@ const nextConfig = {
     async headers() {
         const cspHeader = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*;
-    frame-src 'self' https://*;
-    frame-ancestors 'self' https://*;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' http://* https://*;
+    frame-src 'self' http://* https://*;
+    frame-ancestors 'self' http://* https://*;
 `
         // Replace newline characters and spaces
         const contentSecurityPolicyHeaderValue = cspHeader
