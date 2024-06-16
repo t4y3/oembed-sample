@@ -5,7 +5,7 @@ export default function Page({params}) {
         <main style={{
             height: '100%',
             backgroundColor: "lightblue",
-            color: "lightblue"
+            color: "red"
         }}>
             <h1>Embedされるページです #{params.id}</h1>
         </main>

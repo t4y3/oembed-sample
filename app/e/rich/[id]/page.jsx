@@ -17,7 +17,7 @@ export async function generateMetadata(
 export default function Page() {
     return (
         <main>
-            <h1>Richのembedを確認</h1>
+            <h1>h1:Richのembedを確認</h1>
         </main>
     );
 }
