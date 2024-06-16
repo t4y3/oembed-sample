@@ -64,6 +64,10 @@ const nextConfig = {
                     //     value: "SAMEORIGIN",
                     // },
                     {
+                        key: "Accept-Ranges",
+                        value: "bytes",
+                    },
+                    {
                         key: "X-Content-Type-Options",
                         value: "nosniff",
                     },
