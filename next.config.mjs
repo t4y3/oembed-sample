@@ -14,6 +14,17 @@ const nextConfig = {
         ]
     },
     async headers() {
+        const cspHeader = `
+    default-src 'self';
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*;
+    frame-src 'self' https://*;
+    frame-ancestors 'self' https://*;
+`
+        // Replace newline characters and spaces
+        const contentSecurityPolicyHeaderValue = cspHeader
+            .replace(/\s{2,}/g, ' ')
+            .trim()
+
         return [
             {
                 source: "/api/:path*",
@@ -59,7 +70,7 @@ const nextConfig = {
                     },
                     {
                         key: "Content-Security-Policy",
-                        value: "default-src 'self' https://*; frame-ancestors 'self' https://*;"
+                        value: contentSecurityPolicyHeaderValue
                     }
                 ],
             },
