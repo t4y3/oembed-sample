@@ -15,7 +15,7 @@ const nextConfig = {
     },
     async headers() {
         const cspHeader = `
-    default-src 'self';
+    default-src 'self' http://* https://*;
     script-src 'self' 'unsafe-eval' 'unsafe-inline' http://* https://*;
     connect-src 'self' http://* https://*;
     frame-src 'self' http://* https://*;
