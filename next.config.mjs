@@ -38,7 +38,7 @@ const nextConfig = {
                     },
                     {
                         key: "Access-Control-Allow-Methods",
-                        value: "GET",
+                        value: "GET, OPTIONS",
                     },
                     {
                         key: "Access-Control-Allow-Headers",
@@ -74,6 +74,10 @@ const nextConfig = {
                     {
                         key: "Access-Control-Allow-Headers",
                         value: "Referer",
+                    },
+                    {
+                        key: "Referrer-Policy",
+                        value: "unsafe-url",
                     },
                     {
                         key: "Content-Security-Policy",
