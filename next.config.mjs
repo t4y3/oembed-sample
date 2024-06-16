@@ -57,6 +57,10 @@ const nextConfig = {
                         key: "Access-Control-Allow-Headers",
                         value: "Referer",
                     },
+                    {
+                        key: "Content-Security-Policy",
+                        value: "default-src 'self'; frame-ancestors 'self' https://oembed-sample.vercel.app"
+                    }
                 ],
             },
 
