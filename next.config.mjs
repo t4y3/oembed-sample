@@ -59,7 +59,7 @@ const nextConfig = {
                     },
                     {
                         key: "Content-Security-Policy",
-                        value: "default-src 'self'; frame-ancestors 'self' https://*;"
+                        value: "default-src 'self' https://*; frame-ancestors 'self' https://*;"
                     }
                 ],
             },
