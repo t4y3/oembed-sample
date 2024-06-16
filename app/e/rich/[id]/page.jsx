@@ -1,4 +1,5 @@
 export const runtime = 'edge';
+import { headers } from "next/headers";
 
 export async function generateMetadata(
     {params, searchParams},
@@ -15,6 +16,14 @@ export async function generateMetadata(
 }
 
 export default function Page() {
+    const headersList = headers()
+    
+    console.log( "\x1b[31m" );
+    console.log("_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/");
+    console.log("_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/");
+    console.log("_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/");
+    console.log("\x1b[0m");
+    console.log(headersList);
     return (
         <main>
             <h1>h1:Richのembedを確認</h1>
