@@ -13,7 +13,7 @@ export default function Page({params}) {
             <iframe style={{borderRadius: "12px"}} width={300} height={300} title="oEmbed Rich Sample #${id}"
                     frameBorder="0" allowFullScreen
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    sandbox="allow-scripts" src={`https://oembed-sample.vercel.app/e/rich/${params.blogId}/embed`}></iframe>
+                    sandbox="allow-top-navigation-by-user-activation allow-scripts" src={`https://oembed-sample.vercel.app/e/rich/${params.blogId}/embed`}></iframe>
         </main>
     );
 }

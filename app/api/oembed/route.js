@@ -37,7 +37,7 @@ export async function GET(request) {
         ...(type === 'rich' && {
             "type": "rich",
             "title": `oEmbed Rich Sample #${id}`,
-            "html": `\u003Ciframe style="border-radius: 12px" width="${width}" height="${height}" title="oEmbed Rich Sample #${id}" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" sandbox="allow-scripts" src="${iframeUrl}"\u003E\u003C/iframe\u003E`,
+            "html": `\u003Ciframe style="border-radius: 12px" width="${width}" height="${height}" title="oEmbed Rich Sample #${id}" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" sandbox="allow-top-navigation-by-user-activation allow-scripts" src="${iframeUrl}"\u003E\u003C/iframe\u003E`,
             "url": `https://oembed-sample.vercel.app/e/rich/${id}`,
             "thumbnail_url": thumbnailImage,
             "thumbnail_width": width,
